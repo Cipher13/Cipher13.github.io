@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CISC3630</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        
+        <script language="JavaScript">
+        <!--
+
+        var numQues = 10;
+        var numChoi = 4;
+
+        var answers = new Array(10);
+        answers[0] = "Debris transported by water, ice, or wind that become compacted and cemented together";
+        answers[1] = "The cooling and solidification of molten rock (magma)";
+        answers[2] = "Other rocks that have been subjected to high heat and pressure";
+        answers[3] = "All of the above";
+        answers[4] = "Limestone";
+        answers[5] = "True";
+        answers[6] = "All of the above";
+        answers[7] = "Size";
+        answers[8] = "Cleavage";
+        answers[9] = "All of the above 	";
+
+        function getScore(form) {
+          var score = 0;
+          var currElt;
+          var currSelection;
+
+          for (i=0; i<numQues; i++) {
+            currElt = i*numChoi;
+            for (j=0; j<numChoi; j++) {
+              currSelection = form.elements[currElt + j];
+              if (currSelection.checked) {
+                if (currSelection.value == answers[i]) {
+                  score++;
+                  break;
+                }
+              }
+            }
+          }
+
+          score = Math.round(score/numQues*100);
+          form.percentage.value = score + "%";
+
+          var correctAnswers = "";
+          for (i=1; i<=numQues; i++) {
+            correctAnswers += i + ". " + answers[i-1] + "\r\n";
+          }
+          form.solutions.value = correctAnswers;
+
+        }
+
+        // -->
+        </script>
+ 
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/rmlogo.png" alt="" /></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="minerals.html">Minerals</a></li>
+							<li><a href="rocks.html">Rocks</a></li>
+                            <li><a href="review.html">Review Charts</a></li>
+							<li><a href="reference.html">References</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+                <div id="main">
+                       <div class="inner"> 
+                            <form name="quiz">
+                            <b>1. Sedimentary rocks is formed from</b><br>
+                            <input type="radio" name="q1" value="Debris transported by water, ice, or wind that become compacted and cemented together">Debris transported by water, ice, or wind that become compacted and cemented together<br>
+                            <input type="radio" name="q1" value="Other rocks that have been subjected to high heat and pressure">Other rocks that have been subjected to high heat and pressure<br>
+                            <input type="radio" name="q1" value="The cooling and solidification of molten rock (magma)">The cooling and solidification of molten rock (magma)<br>
+                            <input type="radio" name="q1" value="A specific chemical composition">A specific chemical composition<br>
+                            <p>
+                            <br>
+
+                            <b>2. Igneous rocks is formed from</b><br>
+                            <input type="radio" name="q2" value="Debris transported by water, ice, or wind that become compacted and cemented together">Debris transported by water, ice, or wind that become compacted and cemented together<br>
+                            <input type="radio" name="q2" value="The cooling and solidification of molten rock (magma)">The cooling and solidification of molten rock (magma)<br>
+                            <input type="radio" name="q2" value="Other rocks that have been subjected to high heat and pressure">Other rocks that have been subjected to high heat and pressure<br>
+                            <input type="radio" name="q2" value="A specific chemical composition">A specific chemical composition<br>
+                            <p>
+
+                            <b>3. Metamorphic rocks is formed from</b><br>
+                            <input type="radio" name="q3" value="Debris transported by water, ice, or wind that become compacted and cemented together">Debris transported by water, ice, or wind that become compacted and cemented together<br>
+                            <input type="radio" name="q3" value="The cooling and solidification of molten rock (magma)">The cooling and solidification of molten rock (magma)<br>
+                            <input type="radio" name="q3" value="Other rocks that have been subjected to high heat and pressure">Other rocks that have been subjected to high heat and pressure<br>
+                            <input type="radio" name="q3" value="A specific chemical composition">A specific chemical composition<br>
+                            <p>
+
+                            <b>4. An example of a volcanic(Extrusive) igneous rock is</b><br>
+                            <input type="radio" name="q4" value="Pumice">Pumice<br>
+                            <input type="radio" name="q4" value="Obsidian">Obsidian<br>
+                            <input type="radio" name="q4" value="Vesicular Basalt">Vesicular Basalt<br>
+                            <input type="radio" name="q4" value="All of the above">All of the above<br>
+                            <p>
+
+                            <b>5. An example of an organic sedimentary rock is</b><br>
+                            <input type="radio" name="q5" value="Sandstone">Sandstone<br>
+                            <input type="radio" name="q5" value="Limestone">Limestone<br>
+                            <input type="radio" name="q5" value="Shale">Shale<br>
+                            <input type="radio" name="q5" value="Conglomerate">Conglomerate<br>
+                            <p>
+
+                            <b>6. Foliated metamorphic rocks have a layered or banded appearance</b><br>
+                            <input type="radio" name="q6" value="True">True<br>
+                            <input type="radio" name="q6" value="False">False<br>
+                            <input type="radio" name="q6" value="" hidden="true">
+                            <input type="radio" name="q6" value="" hidden="true">
+                            <p>
+
+                            <b>7. A mineral is</b><br>
+                            <input type="radio" name="q7" value="Solid and are formed naturally in the earth">Solid and are formed naturally in the earth<br>
+                            <input type="radio" name="q7" value="Inorganic">Inorganic<br>
+                            <input type="radio" name="q7" value="A crystalline structure">A crystalline structure<br>
+                            <input type="radio" name="q7" value="All of the above">All of the above<br>
+                            <p>
+
+                            <b>8. Which is not a property used to help identify minerals?</b><br>
+                            <input type="radio" name="q8" value="Color">Color<br>
+                            <input type="radio" name="q8" value="Hardness">Hardness<br>
+                            <input type="radio" name="q8" value="Size">Size<br>
+                            <input type="radio" name="q8" value="Streak">Streak<br>
+                            <p>
+
+                            <b>9. The way a mineral may split apart along a flat surface is called</b><br>
+                            <input type="radio" name="q9" value="Fracture">Fracture<br>
+                            <input type="radio" name="q9" value="Hardness">Hardness<br>
+                            <input type="radio" name="q9" value="Cleavage">Cleavage<br>
+                            <input type="radio" name="q9" value="Streak">Streak<br>
+                            <p>
+
+                            <b>10. Which of the following is a mineral?</b><br>
+                            <input type="radio" name="q10" value="Muscovite">Muscovite<br>
+                            <input type="radio" name="q10" value="Gypsum ">Gypsum <br>
+                            <input type="radio" name="q10" value="Quartz">Quartz<br>
+                            <input type="radio" name="q10" value="All of the above 	">All of the above 	<br>
+                            <p>
+
+                            <input type="button" value="Get score" onClick="getScore(this.form)">
+                            <input type="reset" value="Clear"><p>
+                            Score = <input type=text size=15 name="percentage"><br>
+                            Correct answers:<br>
+                            <textarea name="solutions" wrap="virtual" rows="4" cols="40"></textarea>
+                            </form>
+                        </div>
+                </div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif] -->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
